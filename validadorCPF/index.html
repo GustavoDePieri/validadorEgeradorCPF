@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Validador de CPF</title>
+  </head>
+  <body>
+    <div>
+    <h2>Validador de CPF</h2>
+      <label for="cpf">Digite o CPF:</label>
+      <input class="entrada" type="text" id="cpf" maxlength="14" placeholder="000.000.000-00" />
+      <button onclick="validarCPF()" class="botaoValidar">Validar</button>
+    </div>
+
+    <p id="resultado"></p>
+
+    <div>
+    <h2>Gerador de CPF</h2>
+      <button onclick="GeraCPF.prototype.criaCPF()" class="botaoGerar">Gerar CPF válido</button>
+    </div>
+    
+    <p class="box-CPF-valido" id="resultadoCpfGerado"></p>
+    
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
